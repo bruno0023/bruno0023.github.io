@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGRESSOS</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+
+
+    <!-- Nesse script simples fiz com que aparecesse uma msg ao entrar e atualizar a pagina --> 
+
+    <script>
+         
+         var canal="Compra Confirmada";
+
+         window.alert("Bem vindo! ao site oficial de vendas de ingressos da Banda GHOTS!!!");
+
+    </script>
+
+</head>
+<body>
+
+    <!-- 
+        Abrindo a tag <header> que segnifica topo sao utilizados as seguintes tags
+        
+            <img> = utilizado para colocar uma Imagem no site
+            <nav> = tem a mesma funcionalidade que o <header> mas com seguinificado diferente
+            <a> = utilizado para aplicar um link em um elemento nesse caso apenas um texto
+            
+            class="" = é utilizado para nomear as tags assim é mais facil na hora de puxar o estilo do CSS
+            
+    -->
+    <header class="topo">
+        <img class="logo" src="IMG/LOGO.png" alt="">
+        <h2>Pesquisar</h2>
+        <input class="Pesquisa" type="Pesquisa">
+        <nav class="nave">
+            <a class="navegaçao-text" href="Cadastro.html">CADASTRAR</a>
+            <a class="navegaçao-text" href="entrar.html">ENTRAR</a>
+        </nav>
+    </header>
+
+
+
+    <!-- Com a Tag <main> e <section> que funciona como a uma div começamos a fazer o conteudo principal nela utilizamos a seguintes tags
+       
+        <p> = adiciona uma linha de paragrafo
+        <img> = adiciona uma imagem
+        <div> = adciona um espaço de conteudo 
+
+        <h1> <h2> <h4> = todas as 3 sao tags que adiciona titulos cada um com sua prioridade do 1 ao 3 efetivamente a prioridade altera o tamanho visto no site 
+
+        button = adiciona um botao no site que pode ser estilizado no CSS
+
+        O objetivo nessa primeira pagina é mostrar os modelos de ingressos e seus valores 
+    
+    -->
+
+        <main class="principal">
+
+                <section class="conteudo1">
+                <img class="img1" src="IMG/Call-Me-Little-Sunshine-by-Ghost.jpg" alt="#">
+
+                    <div class="text">
+                        
+                        <h1 class="text-1">GHOST</h1>
+                        <h2 class="text-1">DESCRIÇAO</h2>
+                        <p class="text-1">O estilo da banda mistura heavy metal, rock progressivo e psicodélico das décadas de 1960 e 1970 somado ao rock alternativo e pop rock mais contemporâneo. As letras das músicas são, em sua maioria, de cunho ocultista – porém de forma teatral, que contrasta com a sensibilidade e os vocais limpos que permeiam as canções. Os teclados, órgãos, instrumentação vintage e a produção muito limpa fazem os álbuns soarem inteiramente analógicos. Vários críticos descreveram a música como "sedutoramente lisa e memorável".</p>
+
+                    </div>
+
+                </section>
+
+                <section class="conteudo2">
+
+                    <div class="modelo">
+
+                        <h1>MODELOS</h1>
+                        <h4>PISTA</h2>
+                        <p>Valor= R$ 400</p>
+
+                    </div>
+                    <a class="botao" href="#"><button></button>COMPRAR</a>
+
+                </section>
+                
+                
+                <section class="conteudo2">
+
+                    <div class="modelo">
+
+                        <h1>MODELOS</h1>
+                        <h4>PISTA PREMIUM</h2>
+                        <p>Valor= R$ 800</p>
+
+                    </div>
+                    <a class="botao" href="#"><button></button>COMPRAR</a>
+
+                </section>
+
+                <section class="conteudo2">
+
+                        <div class="modelo">
+
+                            <h1>MODELOS</h1>
+                            <h4>CAMAROTE</h2>
+                            <p>Valor= R$ 2000</p>
+
+                        </div>
+                        <a class="botao" href="#"><button></button>COMPRAR</a>
+                    
+                </section>
+
+        </main>
+            
+
+    <!-- Com a Tag <footer> que tem um significado de cabeçalho no HMTL foi utilizado as mesmas tags citadas anteriormente 
+    
+        <a> = cria um elemento linkavel que te direciona pra um outro local
+        <img> = adiciona uma img
+
+        obs: colando uma tag de img dentro da tag <a> é criado uma imagem link
+    -->
+
+    <footer class="cabeçalho">
+        <a href="#"><img class="cabeçalho-img" src="IMG/insta.png" alt=""></a>
+        <a  class="cabeçalho-text" href="#">Instagram</a>
+        <a href="#"><img class="cabeçalho-img" src="IMG/face.png" alt=""></a>
+        <a class="cabeçalho-text" href="#">Facebook</a>
+        <a href="#"><img class="cabeçalho-img" src="IMG/LINK.png" alt=""></a>
+        <a class="cabeçalho-text" href="#">LinkeDin</a>
+    </footer>
+
+   
+    
+</body>
+
+</html>

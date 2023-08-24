@@ -1,0 +1,189 @@
+
+/* 
+
+Utilizando o Simbolo (*) é Aplicado o estilo para o codigo inteiro 
+text-decoration:none; = retira todas as decoraçoes dos texto
+padding: 0px; = padroniza o padding em 0 sendo assim retiro o espaço dentro do conteudo
+margin: 0px; = padroniza a margin em 0 sendo assim retiro o espaço fora do conteudo
+border: none = retira o Efeito da borda 
+
+*/
+
+*{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: none;  
+}
+
+/* 
+
+Apos puxar a class topo COLOCADO NO INDEX.HTML sao utilizados as seguintes tags
+
+height: 50px = o tamanho do conteudo topo nesse exemplo 50px
+background-color: = define a cor atras do conteudo nesse exemplo utilizo o preto
+display: flex = utilizado para ativar o diplay que nada mais é a tag para posicionamento do conteudo
+align-items: center = utilizado para alinhar os itens em uma linha no meio do conteudo
+justify-content:space-between = umas das tags que acompanha o DISPLAY, serve para definir um padrao de posicionamento dos elementos
+
+*/
+
+.topo{
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo h2{
+    color: #ffffff;
+}
+.Pesquisa{
+    border-radius: 5px;
+    width: 500px;
+    height: 20px;
+}
+
+/*
+
+Apos puxar a class logo sao utilizados a seguintes tags
+
+height = para definir o tamanho da logo
+margin = para definir a margin da logo 
+
+*/
+
+.logo{
+    height: 40px; 
+    margin: 15px;
+}
+
+/* 
+ 
+na class de navegaçao-text sao utilizados a seguintes tags
+
+color = para definir a cor do elemento ( nesse caso o textob )
+margin= para definir a margem fora do conteudo (navegaçao-text)
+padding = para definir a margem dentro do conteudo (navegaçao-text)
+
+
+*/
+
+.navegaçao-text{
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*
+
+Apos puxar a class navegaçao-text é utilizado a tag :HOVER que serve para aplicar um efeito ao passar o mouse sobre o elemento
+
+ background-color = definir a cor atras do elemento nesse caso o elemento ficara com a cor de fundo azul ao passar o mouse
+ transition = define o tempo que esse efeito vai durar dps de tirar o cursor
+ padding = define o espaço que esse efeito ficara do elemento em si
+
+ */
+
+.navegaçao-text:hover{
+    background-color: rgb(95, 138, 138);
+    transition: 0.3s;
+    padding: 10px;
+}
+
+/* 
+
+Apos puxar a class é utilizado a tag :las-child que aplicara um efeito exclusivamente no ultimo elemento no conteudo
+nesse caso aplicara a cor azul fixo no elemento (ENTRAR)
+
+*/
+
+.navegaçao-text:last-child{
+    background-color: rgb(95, 138, 138);
+}
+
+
+
+/* Apos serem devidamente puxadas, tags , no CSS eu utilizei as mesmas tags na estilizaçao do TOPO, codigo acima, adicionando algumas tags diferentes
+
+margin bottom e top = adiciona margem nesse caso na parte de baixo e na de cima
+borde-top e border-bottom = utilizado para adicionar uma borda no conteudo
+width = define uma largura do conteudo
+border-radius = add uma borda 
+
+*/
+
+body{
+    background-color: #000000;
+}
+
+.conteudo1{
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 0.4px solid #ffffff;
+    border-bottom: 0.4px solid #ffffff; 
+}  
+.img1{
+    height: 300px;
+}
+.conteudo1 .text{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 800px;
+}
+.conteudo1 .text-1{
+    color: #ffffff;
+    padding: 10px;
+    text-align: justify;
+    width: 100%;
+    
+}
+
+
+.conteudo2{
+    margin-bottom: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #9e9d9d;
+    display: flex;
+    justify-content: space-between;
+}
+.conteudo2.modelo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo2.comprar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo2 .botao{
+    padding: 20px;
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+/* Referenciando corretamente cada Class no CSS foi utilizado as mesmas tags ja citadas anteriormente*/
+
+.cabeçalho{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.cabeçalho-img{
+    height: 40px;
+    padding: 20px;
+}
+.cabeçalho .cabeçalho-text{
+    color: #ffffff; 
+}

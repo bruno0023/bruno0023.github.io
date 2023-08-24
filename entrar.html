@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGRESSOS</title>
+    <link rel="stylesheet" href="CSS/entrar.css">
+
+
+    <!-- Apos a abertura do script começamos a codar o javascript criei uma funçao com nome logar que aciona um alerta ao apertar no botao enviar criada pela tag input ao acionar aparece uma msg escrita sucesso ... e logo apos redireciona o usuario para outra tela  -->
+    
+    <script>
+        function logar(){
+
+                alert('Sucesso no Login estamos te redirecionando!');
+                location.href = "Confirmar.html"
+            
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- Utilizei o mesmo codigo para A pagina de login e senha ja que ambas sao parecidas, alterei apenas os nomes e adionei alguns input + na parte de cadastro
+    
+        input= Adciona uma aba para o usuario preencher com a implementaçao do banco de dados podemos vincular esses input com insert por exemplo que adicionaria oq o usuario digitou no banco de dados esse metodo é utilizado principalmente para efetuar cadastro e para confirmar login.
+    
+    -->
+
+    <header class="topo">
+        <a href="index.html"><img class="logo" src="IMG/LOGO.png" alt=""></a>
+        <nav class="nave">
+        </nav>
+    </header>
+
+    <div class="Login">
+        <h1>Login</h1>
+        <input type="text" placeholder="Login" id="login">
+        <br><br>
+        <input type="password" placeholder="senha" id="senha">
+        <br><br>
+        <input type="submit" onclick="logar()">
+    </div>
+    
+</body>
+</html>
